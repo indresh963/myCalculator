@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(110, 103, 103);
+    height: 100vh;
+}
+
+.wrapper{
+    width: auto;
+    padding:1.2rem;
+    margin: 8rem 18rem;
+    background-color: black;
+    border-radius: 10px;
+
+}
+
+
+.screen{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding:0rem 0.6rem;
+    padding-top: 1rem;
+    height: 3rem;
+    width: 100%;
+    border:unset;
+    outline: unset;
+    box-shadow: unset;
+    pointer-events: none;
+    text-align: right;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color:#ebe2e2;
+    background-color: #000;
+    letter-spacing: 1.5px;
+}
+
+.keypad{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content:space-evenly;
+    height: 16rem;
+}
+
+button{
+    border-radius: 18px;
+    width: 6rem;
+    height: 2.4rem;
+    font-weight: 550;
+    background-color: rgb(68, 64, 64);
+    font-size: 0.8rem;
+    color:rgb(206, 204, 204)
+}
+
+#erase{
+    font-size:1.3rem ;
+}
+
+#equals{
+    background-color: rgb(32, 145, 197);
+}
+
+button:active{
+    background-color: transparent;
+
+}
+
+.operator{
+    color: rgb(31, 160, 219);
+    text-shadow: 0 0 2px 0 blue;
+}
+
+button.operator:not(#allclear,#erase), button#equals{
+    font-size: 1rem;
+}
+
+#equals:active{
+    background-color: transparent;
+}
+
+.dir:not(.operator,.bracket), #byTen{
+    color:aqua
+
+}
